@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "books-erp": {
+      "command": "uv",
+      "args": ["run", "python", "-m", "mcp_server.main"],
+      "cwd": "/Users/rajathkumar/localmcpchat",
+      "env": {
+        "BOOKS_API_HOST": "http://127.0.0.1:8000",
+        "BOOKS_API_TOKEN": "secret-token-123"
+      }
+    }
+  }
+}
