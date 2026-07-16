@@ -23,6 +23,7 @@ A local MCP (Model Context Protocol) chat application that lets you interact wit
 - [MCP Tools Reference](#mcp-tools-reference)
 - [Environment Variables](#environment-variables)
 - [Setup & Installation](#setup--installation)
+- [Visual Walkthrough](#visual-walkthrough)
 - [Running the System](#running-the-system)
 - [Running Tests](#running-tests)
 - [MCP Configuration](#mcp-configuration)
@@ -61,6 +62,36 @@ The system is composed of three layers:
 │                                              └──────────────┘          │
 └─────────────────────────────────────────────────────────────────────────┘
 ```
+
+---
+
+## Visual Walkthrough
+
+For the complete setup, verification, and troubleshooting procedure, read [How to Run This App](docs/How%20to%20Run%20This%20App.md).
+
+### 1. Start the FastAPI service
+
+<img src="docs/images/localmcpchathow1.png" alt="Uvicorn running the Books ERP FastAPI service" width="800" />
+
+### 2. FastMCP server uses stdio transport
+
+<img src="docs/images/localmcpchathow2.png" alt="FastMCP server starting with stdio transport" width="800" />
+
+### 3. Configure the Books ERP MCP server in LM Studio
+
+<img src="docs/images/localmcpchathow3.png" alt="LM Studio MCP configuration with API host and token" width="800" />
+
+### 4. Select a tool-calling local model
+
+<img src="docs/images/localmcpchathow4.png" alt="LM Studio local model picker" width="800" />
+
+### 5. Enable the Books ERP tools in a chat
+
+<img src="docs/images/localmcpchathow5.png" alt="LM Studio chat with Books ERP MCP tools enabled" width="800" />
+
+### 6. Ask for books and receive a grounded result
+
+<img src="docs/images/localmcpchathow6.png" alt="LM Studio returning books through the get_books MCP tool" width="800" />
 
 ---
 
